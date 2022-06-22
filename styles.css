@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+html{
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/background.png);
+    background-size: auto;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    height: 20%;
+    width: 80%;
+    align-self: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.linksdenavegacao{
+    display:flex;
+    width:50%;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(231,231,231,100)
+}
+
+a:hover{
+    color: white;
+}
+
+.imagem-header{
+    width: 2vw;
+}
+
+.imgscomida{
+    display: flex;
+    flex-direction: row;
+}
+
+#copo{
+    margin-left: 3%;
+}
+
+#coxinha{
+    margin-left: 1%;
+}
+
+.navlink {
+    display: inline-block;
+    position: relative;
+    height: fit-content;
+  }
+  
+.navlink:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(71,0,103,1) 0%, rgba(255,0,69,1) 50%, rgba(185,37,0,1) 100%);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.navlink:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+main{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+    align-items:center;
+    justify-content: center;
+    overflow:hidden;
+    padding-bottom: 100px;
+}
+
+.lado-esquerdo{
+    display:flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.lado-direito{
+    display: flex;
+    width:40%;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logotipo{
+    width: 45%;
+    height: 20%;
+}
+
+.botao-pedido{
+    width:12.5vw;
+    height: 3vw;
+    border: solid 4px #FF3D3D;
+    background-color: black;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    border-radius: 30px;
+    font-size: 0.9vw;
+    margin-top: 20px;
+}
+
+.imagem-texto{
+    height: 100%;
+    max-width: 750px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    background-color: rgba(1,1,1,0.5);
+}
+
+p{
+    margin:0px;
+}
+
+.container-contato{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+}
+
+
+.info{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.infotitle{
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.redessociais{
+    display:flex;
+    justify-content: space-around;
+}
+
+.logoredesocial{
+    width: 35px;
+}
+
+.logoredesocial:hover{
+    background-color: rgba(116, 116, 116, 0.5);
+    border-radius: 10px;
+}
+
+.redessociaisnav{
+    width:20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logoredesocialnav{
+    width: 1.8vw;
+}
+
+.logoredesocialnav:hover{
+    background-color: rgba(116, 116, 116, 0.5);
+    border-radius: 10px;
+}
+
+.menu-container{
+    height: 80%;
+    width: 100%;
+}
+
+.menu{
+    width: 35%;
+    min-width: 300px;
+    margin-left: 22%;
+    box-shadow: 5px 5px 5px black;
+}
+
+.logoredesocialnavcontato{
+    width:35px;
+    display: none;
+}
+
+@media (max-width: 600px){
+
+    .imagem-header{
+        width: 4vw;
+    }
+
+    header{
+        font-size: 3.5vw;
+        height: 10%;
+        width: 100%;
+        justify-content:space-around;
+        padding: 15px;
+    }
+
+    .nav{
+        width: 60%;
+    }
+
+    .linksdenavegacao{
+        width: 100%;
+    }
+
+    .logoredesocialnav{
+        width: 15px;
+        margin: 2px;
+    }
+
+    .redessociaisnav{
+        width: 15%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main{
+        flex-direction: column;
+        height: 90%;
+        padding-top: 50px;
+    }
+
+    .lado-esquerdo{
+        height: 40%;
+        width: 100%;
+    }
+
+    .lado-direito{
+        height: 40%;
+        width: 100%;
+    }
+
+    .imagem-texto{
+        height: 58.82px;
+        width: 300px;
+        align-self:center;
+    }
+
+    .logotipo{
+        height: 150px;
+        width: 150px;
+    }
+
+    .botao-pedido{
+        width: 150px;
+        height: 15%;
+        align-self: center;
+        font-size: 2.5vw;
+    }
+
+    .container-contato{
+        flex-direction: column-reverse;
+        align-content: space-between;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .infotitle{
+        font-size: 14px;
+    }
+
+    .mapa{
+        width: 100%;
+        height: 250px;
+    }
+
+    .logoredesocial{
+        width: 28px;
+    }
+
+    .informacoes{
+        font-size: 12px;
+    }
+
+    .redessociais{
+        margin-top: 20px;
+    }
+
+
+}
